@@ -2,6 +2,7 @@
 name = "sub-fixer"
 version = "0.1.0"
 edition = "2021"
+authors = ["Hamid R. K. Pishghadam <kaveh@riseup.net>"]
 
 [[bin]]
 name = "sub-fixer"
@@ -10,3 +11,4 @@ path = "src/main.rs"
 [dependencies]
 regex = "1.6"
 lazy_static = "1.4"
+clap = { version = "3.2", features = ["derive"] }
