@@ -5,6 +5,7 @@ edition = "2021"
 authors = ["Hamid R. K. Pishghadam <kaveh@riseup.net>"]
 description = "Fix Persian subtitles"
 license = "MIT OR Apache-2.0"
+repository = "https://github.com/hamidrezakp/sub-fixer-rs"
 
 [[bin]]
 name = "sub-fixer"
