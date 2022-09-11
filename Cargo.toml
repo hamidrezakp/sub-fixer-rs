@@ -1,0 +1,12 @@
+[package]
+name = "sub-fixer"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "sub-fixer"
+path = "src/main.rs"
+
+[dependencies]
+regex = "1.6"
+lazy_static = "1.4"
