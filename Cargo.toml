@@ -3,6 +3,8 @@ name = "sub-fixer"
 version = "0.1.0"
 edition = "2021"
 authors = ["Hamid R. K. Pishghadam <kaveh@riseup.net>"]
+description = "Fix Persian subtitles"
+license = "MIT OR Apache-2.0"
 
 [[bin]]
 name = "sub-fixer"

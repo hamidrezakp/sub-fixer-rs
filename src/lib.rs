@@ -6,9 +6,9 @@ extern crate lazy_static;
 mod regex {
     use regex::Regex;
 
-    const STR_TIMESTAMP_PATTERN: &'static str =
+    const STR_TIMESTAMP_PATTERN: &str =
         r"^(\d{2}):(\d{2}):(\d{2}),(\d{3})\s-->\s(\d{2}):(\d{2}):(\d{2}),(\d{3})$";
-    const STR_LINE_NUM_PATTERN: &'static str = r"^\d+$";
+    const STR_LINE_NUM_PATTERN: &str = r"^\d+$";
 
     lazy_static! {
         pub static ref SRT_TIMESTAMP_REGEX: Regex = Regex::new(STR_TIMESTAMP_PATTERN).unwrap();
@@ -53,12 +53,12 @@ impl Subtitle {
     }
 
     fn replace_arabic_chars(&mut self) {
-        self.contents = self.contents.replace("ي", "ی");
-        self.contents = self.contents.replace("ك", "ک");
+        self.contents = self.contents.replace('ي', "ی");
+        self.contents = self.contents.replace('ك', "ک");
     }
 
     fn replace_question_mark(&mut self) {
-        self.contents = self.contents.replace("?", "؟");
+        self.contents = self.contents.replace('?', "؟");
     }
 
     fn remove_rtl_char(&mut self) {
